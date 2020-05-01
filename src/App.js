@@ -42,10 +42,8 @@ class App extends Component {
      }
 
      handle = (event) =>{
-          this.setState({clicked:true})
           if(clicked===false)
           {
-               this.setState({prevColor:this.state.color, prevShape:this.state.shape})
                firstColor=event.target.style.backgroundColor
                firstShape=event.target.innerText
                firstId=parseInt(event.target.id)
@@ -64,6 +62,7 @@ class App extends Component {
                               c.color='white'
                          }
                     })
+                    this.setState({cards:ar})
                }
                firstShape=''
                firstColor=''
