@@ -42,7 +42,6 @@ class App extends Component {
      }
 
      handle = (event) =>{
-          
           if(clicked===false)
           {
                firstColor=event.target.style.backgroundColor
